@@ -6,6 +6,17 @@ A full-stack authentication system built with C# ASP.NET Core backend and TypeSc
 
 ![SecureAuth Dashboard](screenshots/dashboard.png)
 
+## SQLite Variant
+
+This is **SecureAuth-Lite** — a SQLite variant of the 
+[SecureAuth](https://github.com/Nathan-Forest/SecureAuth) system.
+
+Demonstrates EF Core's database-agnostic design. The only differences 
+from the PostgreSQL version are:
+- SQLite instead of PostgreSQL (one NuGet package swap)
+- No database container — SQLite is embedded
+- Ideal for single-user and home lab deployments
+
 ## 🎯 Project Overview
 
 SecureAuth is a secure authentication system designed to be the central SSO (Single Sign-On) hub for all portfolio applications. Built with enterprise-grade security practices and modern web technologies.
