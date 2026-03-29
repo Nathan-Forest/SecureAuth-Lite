@@ -13,7 +13,7 @@ builder.Services.AddControllers();
 
 // Database configuration
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Authentication services
 builder.Services.AddScoped<IAuthService, AuthService>();
