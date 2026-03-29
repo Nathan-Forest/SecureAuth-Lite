@@ -14,7 +14,7 @@ export default function Register() {
   const { register } = useAuth();
   const navigate = useNavigate();
 
-const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault()
     setError('');
 
