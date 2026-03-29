@@ -42,7 +42,7 @@ SecureAuth is a secure authentication system designed to be the central SSO (Sin
 
 ### Backend
 - **Framework:** ASP.NET Core 8
-- **Database:** PostgreSQL 15
+- **Database:** SQLite
 - **ORM:** Entity Framework Core
 - **Authentication:** JWT Bearer Tokens
 - **Password Hashing:** BCrypt.Net
