@@ -20,7 +20,12 @@ jobs:
           cd ~/apps/SecureAuth-Lite
           docker-compose up --build -d
 
-      - name: Verify container is running
+      - name: Verify API container is running
         run: |
           sleep 5
-          docker ps | grep SecureAuth-Lite
+          docker ps | grep secureauth-lite-api
+          
+      - name: Verify frontend container is running
+        run: |
+          sleep 5
+          docker ps | grep secureauth-lite-frontend
